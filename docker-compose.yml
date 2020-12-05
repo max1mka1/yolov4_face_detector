@@ -1,0 +1,22 @@
+version: "2.4"
+
+services:
+  trainer:
+    build:
+      context: ./build/
+
+    runtime: nvidia
+
+    image: yolov4_face_detector_trainer
+
+    environment:
+      - NVIDIA_VISIBLE_DEVICES=0
+
+    tty: true
+
+    volumes:
+      - ./app/:/app/
+
+    ipc: host
+
+    command: python3 /app/train.py -b 2 -l 0.01 -g 0 -classes 1 -dir /app/data/wheat/convertor -pretrained /app/pretrained_models/yolov4.conv.137.pth -optimizer adam -iou-type giou -train_label_path /app/data/wheat/train.txt

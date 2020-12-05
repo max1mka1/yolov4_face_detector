@@ -1,0 +1,83 @@
+.dockerignore
+Pipfile.lock
+
+# IPython Notebooks
+.ipynb_checkpoints
+.ipynb_checkpoints/
+app/.ipynb_checkpoints
+app/.ipynb_checkpoints/
+
+# Byte-compiled / optimized / DLL files
+*.py[cod]
+__pycache__/
+*$py.class
+
+# Distribution / packaging
+.Python
+#build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+.idea
+.idea/
+
+
+# Installer logs
+pip-log.txt
+pip-delete-this-directory.txt
+
+# logs
+*/log*.txt
+log/
+app/log/
+/log/
+/app/log/
+./log
+./log/
+./app/log
+./app/log/
+
+# Unit test / coverage reports
+htmlcov/
+.tox/
+.coverage
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+.pytest_cache/
+
+# pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# mypy
+.mypy_cache/
+
+# Pytorch
+*.pth
+
+# Data
+app/data/

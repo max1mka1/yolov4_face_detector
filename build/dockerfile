@@ -1,0 +1,7 @@
+FROM nvcr.io/nvidia/pytorch:19.11-py3
+
+WORKDIR /app
+
+COPY ./requirements.txt ./app/requirements.txt
+
+RUN pip install -r ./app/requirements.txt
